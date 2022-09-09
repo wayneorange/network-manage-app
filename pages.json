@@ -4,224 +4,68 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/tabbar",
+			"path": "views/state/state",
 			"style": {
-				"navigationBarTitleText": "前端铺子",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/Advanced_settings",
-			"style": {
-				"navigationBarTitleText": "高级设置",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/salary",
-			"style": {
-				"navigationBarTitleText": "薪资排行",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/salary",
-			"style": {
-				"navigationBarTitleText": "薪资排行",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/salary",
-			"style": {
-				"navigationBarTitleText": "薪资排行",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/aboutMe",
-			"style": {
-				"navigationBarTitleText": "关于作者",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/mentalTest/list",
-			"style": {
-				"navigationBarTitleText": "答题测试",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/mentalTest/index",
-			"style": {
-				"navigationBarTitleText": "答题测试",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/me/mentalTest/explain",
-			"style": {
-				"navigationBarTitleText": "答题规则说明"
-			}
-		},
-		{
-			"path": "pages/video",
-			"style": {
-				"navigationBarTitleText": "视频播放",
-				"usingComponents": {
-					// #ifdef  MP-WEIXIN 
-					"txv-video": "plugin://tencentvideo/video"
-					// #endif
-				}
-			}
-		},
-		{
-			"path": "pages/project/list",
-			"style": {
-				"navigationBarTitleText": "项目展示",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/project/project",
-			"style": {
-				"navigationBarTitleText": "项目展示",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/timeline",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/design",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/main/customCamera",
-			"style": {
-				"navigationBarTitleText": "自定义相机/图片编辑器"
-			}
-		},
-		{
-			"path": "pages/main/posterList",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "海报设计工具"
-			}
-		},
-		{
-			"path": "pages/main/posterImg",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "pages/router/nineShaft",
-			"style": {
-				"navigationBarTitleText": "九轴展示",
-				"navigationStyle": "custom"
+				"navigationBarTitleText": "状态",
+				"navigationStyle": "",
+				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/index/tools",
+			"path": "views/network/network",
+			"style": {
+				"navigationBarTitleText": "网络拓扑图",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/toolbox/toolbox",
 			"style": {
 				"navigationBarTitleText": "工具箱",
-				"navigationStyle": "custom"
+				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/router/tempetura",
+			"path": "views/routing/routing",
 			"style": {
-				"navigationBarTitleText": "温湿度",
-				"navigationStyle": "custom"
-			}
-
-		}, {
-			"path": "pages/router/routerDiagram",
-			"style": {
-				"navigationBarTitleText": "定制版测试",
-				"navigationStyle": "custom"
-			}
-
-		}, {
-			"path": "pages/router/test",
-			"style": {
-				"navigationBarTitleText": "ucharts的实时数据",
-				"navigationStyle": "custom"
+				"navigationBarTitleText": "路由设置",
+				"enablePullDownRefresh": false
 			}
 
 		}
-
-		, {
-			"path": "pages/router/test",
-			"style": {
-				"navigationBarTitleText": "",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/router/humidityHis",
-			"style": {
-				"navigationBarTitleText": "实时环境历史记录",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/router/nineShaftHis",
-			"style": {
-				"navigationBarTitleText": "实时姿态历史记录",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/router/signalHis",
-			"style": {
-				"navigationBarTitleText": "信号强度历史数据",
-				"navigationStyle": "custom"
-			}
-		}
-        ,{
-            "path" : "views/state/state",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/network/network",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/toolbox/toolbox",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/routing",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#4f67e6",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"iconfontSrc": "static/iconfont.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
+		"list": [{
+			"pagePath": "views/state/state",
+			"iconPath": "static/tabBar/state.png",
+			"selectedIconPath": "static/tabBar/state_select.png",
+			"text": "状态"
+		}, {
+			"pagePath": "views/network/network",
+			"iconPath": "static/tabBar/networktp.png",
+			"selectedIconPath": "static/tabBar/newworktp_select.png",
+			"text": "网络拓扑"
+		}, {
+			"pagePath": "views/toolbox/toolbox",
+			"iconPath": "static/tabBar/toolbox.png",
+			"selectedIconPath": "static/tabBar/toolbox_select.png",
+			"text": "工具箱"
+		}, {
+			"pagePath": "views/routing/routing",
+			"iconPath": "static/tabBar/routing.png",
+			"selectedIconPath": "static/tabBar/routing_select.png",
+			"text": "路由设置"
+		}]
+	},
 	"subPackages": [{
 			"root": "tn_components",
 			"pages": [{
