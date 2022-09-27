@@ -54,11 +54,10 @@
 				const screenWidth = screenInfo.windowWidth;
 				const color = '#4875b3';
 				const ctx = uni.createCanvasContext('canvas');
-				console.log('screenInfo', screenInfo);
 				// 
 				const centerScreen = Number(screenWidth / 2);
 				ctx.drawImage('../../static/network/network.png', centerScreen - 40, 40, 80, 80);
-				ctx.drawImage('../../static/network/luyou.png', centerScreen - 50, 180, 100, 100);
+				ctx.drawImage('../../static/network/luyou.png', centerScreen - 40, 180, 80, 80);
 				ctx.moveTo(centerScreen, 180);
 				ctx.lineTo(centerScreen, 150);
 				ctx.lineWidth = 2.5;
@@ -75,7 +74,9 @@
 				const imgs = this.imgs || [];
 				const num = ((screenWidth / 4) - 80) / 2;
 				imgs.forEach((o, i) => {
-					ctx.drawImage(o.img, ((screenWidth / 4) * (i % 4)) + num, (Math.ceil((i + 1) / 4) - 1) * 120 + 350 , 80, 80);
+					if(o) {
+						ctx.drawImage(o.img, ((screenWidth / 4) * (i % 4)) + num, (Math.ceil((i + 1) / 4) - 1) * 120 + 350 , 80, 80);
+					}
 				})
 				
 				const startLine = (screenWidth / 4) / 2;
@@ -125,7 +126,7 @@
 	.luyou {
 		left: 50%;
 		transform: translateX(-50%);
-		top: 280px;
+		top: 265px;
 		position: absolute;
 	}
 	

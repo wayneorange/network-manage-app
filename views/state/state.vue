@@ -1,6 +1,6 @@
 <template>
 	<view class="state-container">
-		<u-sticky offset-top="">
+		<u-sticky offset-top="" :enable="enable">
 			<view class="sate-header">
 				<div class="state-equipment-title">
 					<span @click="selectEquipment">{{ selectEqItem.label }}</span>
@@ -93,8 +93,16 @@
 				selectEqItem: {
 					value: 'lyq',
 					label: '路由器'
-				}
+				},
+				enable: true
 			};
+		},
+		// 在对应的show和hide页面生命周期中打开或关闭监听
+		onShow() {
+			this.enable= true
+		},
+		onHide() {
+			this.enable= false
 		},
 		computed: {
 			selectEqIndex() {

@@ -1,6 +1,9 @@
 <template>
 	<view class="tooltip-contaier">
-		<view class="tooltip-list" v-for="(item, i) in list" :key="item.title + i">
+		<cu-custom bgColor="bg-gradual-blue">
+			<block class="text-lg" slot="content">工具箱</block>
+		</cu-custom>
+		<view class="tooltip-list" v-for="(item, i) in list" :key="item.title + i" @click="showDetail(item)">
 			<view class="left">
 				<img :src="item.img">
 				<text class="name">{{ item.title }}</text>
@@ -20,35 +23,51 @@
 					{
 						title: '九轴测试图',
 						img: '../../static/network/dell.png',
-						url: ''
+						url: '/pages/router/nineShaft'
 					},
 					{
 						title: '温湿度图',
 						img: '../../static/network/dell.png',
-						url: ''
+						url: '/pages/router/tempetura'
 					},
 					{
 						title: '路由器测试',
 						img: '../../static/network/dell.png',
-						url: ''
+						url: '/pages/router/routerDiagram'
 					},
 					{
 						title: '图表历史记录',
 						img: '../../static/network/dell.png',
-						url: ''
+						url: '/pages/router/routerDiagram'
 					},
 					{
 						title: '实时环境检测历史记录',
 						img: '../../static/network/dell.png',
-						url: ''
+						url: '/pages/router/humidityHis'
 					},
 					{
 						title: '实时姿态检测历史记录',
 						img: '../../static/network/dell.png',
-						url: ''
+						url: '/pages/router/nineShaftHis'
+					},
+					{
+						title: '信号强度历史记录',
+						img: '../../static/network/dell.png',
+						url: '/pages/router/signalHis'
 					}
 				]
 			};
+		},
+		methods: {
+			showDetail: function(item) {
+				uni.navigateTo({
+					url: item.url,
+					success(res) {
+					},
+					fail(err) {
+					}
+				});
+			}
 		}
 	}
 </script>
@@ -93,8 +112,6 @@
 			align-items: center;
 			margin-right: 20px;
 		}
-		
-		
 	}
 }
 </style>

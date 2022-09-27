@@ -2,9 +2,9 @@ import Vue from 'vue'
 import App from './App'
 
 // 此处为引用自定义顶部
-import cuCustom from './colorui/components/cu-custom.vue'
+import cuCustom from './colorui/components/cu-custom.vue';
 Vue.component('cu-custom',cuCustom);
-import TnCustom from './components/TnCustom/TnCustom.vue'
+import TnCustom from './components/TnCustom/TnCustom.vue';
 Vue.component('tn-custom', TnCustom)
 
 // 引入:uView-UI

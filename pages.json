@@ -7,7 +7,6 @@
 			"path": "views/state/state",
 			"style": {
 				"navigationBarTitleText": "状态",
-				"navigationStyle": "",
 				"enablePullDownRefresh": false
 			}
 
@@ -22,7 +21,7 @@
 			"path": "views/toolbox/toolbox",
 			"style": {
 				"navigationBarTitleText": "工具箱",
-				"enablePullDownRefresh": false
+				"navigationStyle": "custom"
 			}
 
 		}, {
@@ -31,9 +30,199 @@
 				"navigationBarTitleText": "路由设置",
 				"enablePullDownRefresh": false
 			}
-
+		},
+		{
+		    "path" : "views/register/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			"path": "pages/index/tabbar",
+			"style": {
+				"navigationBarTitleText": "前端铺子",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Advanced_settings",
+			"style": {
+				"navigationBarTitleText": "高级设置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/salary",
+			"style": {
+				"navigationBarTitleText": "薪资排行",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/salary",
+			"style": {
+				"navigationBarTitleText": "薪资排行",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/salary",
+			"style": {
+				"navigationBarTitleText": "薪资排行",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/aboutMe",
+			"style": {
+				"navigationBarTitleText": "关于作者",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/mentalTest/list",
+			"style": {
+				"navigationBarTitleText": "答题测试",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/mentalTest/index",
+			"style": {
+				"navigationBarTitleText": "答题测试",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/mentalTest/explain",
+			"style": {
+				"navigationBarTitleText": "答题规则说明"
+			}
+		},
+		{
+			"path": "pages/video",
+			"style": {
+				"navigationBarTitleText": "视频播放",
+				"usingComponents": {
+					// #ifdef  MP-WEIXIN 
+					"txv-video": "plugin://tencentvideo/video"
+					// #endif
+				}
+			}
+		},
+		{
+			"path": "pages/project/list",
+			"style": {
+				"navigationBarTitleText": "项目展示",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/project",
+			"style": {
+				"navigationBarTitleText": "项目展示",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/timeline",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/design",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/main/customCamera",
+			"style": {
+				"navigationBarTitleText": "自定义相机/图片编辑器"
+			}
+		},
+		{
+			"path": "pages/main/posterList",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "海报设计工具"
+			}
+		},
+		{
+			"path": "pages/main/posterImg",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/router/nineShaft",
+			"style": {
+				"navigationBarTitleText": "九轴展示",
+				"navigationStyle": "custom"
+			}
+		
+		}, {
+			"path": "pages/index/tools",
+			"style": {
+				"navigationBarTitleText": "工具箱",
+				"navigationStyle": "custom"
+			}
+		
+		}, {
+			"path": "pages/router/tempetura",
+			"style": {
+				"navigationBarTitleText": "温湿度",
+				"navigationStyle": "custom"
+			}
+		
+		}, {
+			"path": "pages/router/routerDiagram",
+			"style": {
+				"navigationBarTitleText": "定制版测试",
+				"navigationStyle": "custom"
+			}
+		
+		}, {
+			"path": "pages/router/test",
+			"style": {
+				"navigationBarTitleText": "ucharts的实时数据",
+				"navigationStyle": "custom"
+			}
+		
 		}
-	],
+		
+		, {
+			"path": "pages/router/test",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/router/humidityHis",
+			"style": {
+				"navigationBarTitleText": "实时环境历史记录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/router/nineShaftHis",
+			"style": {
+				"navigationBarTitleText": "实时姿态历史记录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/router/signalHis",
+			"style": {
+				"navigationBarTitleText": "信号强度历史数据",
+				"navigationStyle": "custom"
+			}
+		}
+    ],
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#4f67e6",
