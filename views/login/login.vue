@@ -66,7 +66,7 @@ import loginVue from './login.vue';
 			submit() {
 				this.$refs.uForm.validate(valid => {
 					if (valid) {
-						console.log('验证通过');
+						uni.switchTab({							url: '/views/state/state'						});
 					} else {
 						console.log('验证失败');
 					}
