@@ -26,11 +26,17 @@
 			<text>没有TP-Link ID？立即注册</text>
 		</view>
 
+		<!--  -->
+		<u-mask :show="maskShow" @click="maskShow = false">
+			<view class="warp" style="height: 100%;width: 100%;display: flex;align-items: center;justify-content: center;">
+				<u-loading mode="flower" :show="true" @tap.stop size="100" color="red"></u-loading>
+			</view>
+		</u-mask>
 	</view>
 </template>
 
 <script>
-import loginVue from './login.vue';
+	import loginVue from './login.vue';
 	export default {
 		data() {
 			return {
@@ -59,14 +65,17 @@ import loginVue from './login.vue';
 				customButtonStyle: {
 					backgroundColor: '#a0ceff',
 					border: 'none'
-				}
+				},
+				maskShow: false
 			}
 		},
 		methods: {
-			submit() {
+			submit() {				this.maskShow = true
 				this.$refs.uForm.validate(valid => {
 					if (valid) {
-						uni.switchTab({							url: '/views/state/state'						});
+						uni.switchTab({
+							url: '/views/state/state'
+						});						this.maskShow = false
 					} else {
 						console.log('验证失败');
 					}
@@ -124,8 +133,5 @@ import loginVue from './login.vue';
 			justify-content: center;
 			color: #8f9eaa;
 		}
-
-
-
 	}
 </style>
