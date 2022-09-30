@@ -1,6 +1,6 @@
 <template>
-	<view>
-		注册
+	<view class="register-container">
+		
 	</view>
 </template>
 
@@ -15,5 +15,9 @@
 </script>
 
 <style lang="less">
-
+	.register-container {
+		height: 100%;
+		width: 100%;
+		background-color: #fff;
+	}
 </style>

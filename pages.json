@@ -4,6 +4,22 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "views/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			"path": "views/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
 			"path": "views/state/state",
 			"style": {
 				"navigationBarTitleText": "状态",
@@ -30,15 +46,6 @@
 				"navigationBarTitleText": "路由设置",
 				"enablePullDownRefresh": false
 			}
-		},
-		{
-		    "path" : "views/register/register",
-		    "style" :                                                                                    
-		    {
-		        "navigationBarTitleText": "",
-		        "enablePullDownRefresh": false
-		    }
-		    
 		},
 		{
 			"path": "pages/index/tabbar",
@@ -163,37 +170,37 @@
 				"navigationBarTitleText": "九轴展示",
 				"navigationStyle": "custom"
 			}
-		
+
 		}, {
 			"path": "pages/index/tools",
 			"style": {
 				"navigationBarTitleText": "工具箱",
 				"navigationStyle": "custom"
 			}
-		
+
 		}, {
 			"path": "pages/router/tempetura",
 			"style": {
 				"navigationBarTitleText": "温湿度",
 				"navigationStyle": "custom"
 			}
-		
+
 		}, {
 			"path": "pages/router/routerDiagram",
 			"style": {
 				"navigationBarTitleText": "定制版测试",
 				"navigationStyle": "custom"
 			}
-		
+
 		}, {
 			"path": "pages/router/test",
 			"style": {
 				"navigationBarTitleText": "ucharts的实时数据",
 				"navigationStyle": "custom"
 			}
-		
+
 		}
-		
+
 		, {
 			"path": "pages/router/test",
 			"style": {
@@ -222,6 +229,33 @@
 				"navigationStyle": "custom"
 			}
 		}
+	    ,{
+            "path" : "views/losePassword/yanzheng/yanzheng",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "views/losePassword/codeCheck/codeCheck",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "views/losePassword/rePassword/rePassword",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 		"color": "#7A7E83",
