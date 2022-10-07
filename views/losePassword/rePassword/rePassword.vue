@@ -1,6 +1,6 @@
 <template>
 	<view class="rePassword-container">
-		<h1>设置新密码</h1>
+		<h1>设置密码</h1>
 		<text class="tip">6 ~ 32 个字符</text>
 		<u-form :model="form" ref="uForm">
 			<u-form-item left-icon="lock-fill" label="" prop="password">

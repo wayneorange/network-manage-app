@@ -23,7 +23,7 @@
 			<u-button :custom-style="customButtonStyle" @click="submit">登录</u-button>
 		</view>
 		<view class="toRegister">
-			<text>没有TP-Link ID？立即注册</text>
+			<text @click="signIn">没有TP-Link ID？立即注册</text>
 		</view>
 
 		<!--  -->
@@ -84,6 +84,11 @@
 			losePassword: function() {
 				uni.navigateTo({
 					url: '/views/losePassword/yanzheng/yanzheng'
+				});
+			},
+			signIn: function() {
+				uni.navigateTo({
+					url: '/views/register/register'
 				});
 			},
 			cancel() {
