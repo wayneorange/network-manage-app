@@ -21,7 +21,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="more" dir="rtl">
+					<div class="more" dir="rtl" @click="goNetworkManage">
 						<u-icon name="arrow-right"></u-icon>
 						<span>上网设置</span>
 					</div>
@@ -63,8 +63,9 @@
 				<!--  -->
 			</div>
 			<div class="more-list">
-				<span style="color: #8b8b8b;">展开<u-icon style="margin: 0 5px;" name="arrow-down"></u-icon></span>
-				<span style="color: #7c99b5;font-weight: 500;">设备总表</span>
+				<span style="color: #8b8b8b;" v-show="!isOpen">展开<u-icon style="margin: 0 5px;" name="arrow-down"></u-icon></span>
+				<span></span>
+				<span style="color: #7c99b5;font-weight: 500;"  @click="goEquipManage">设备总表</span>
 			</div>
 		</view>
 		<view class="visitor-config">
@@ -128,7 +129,8 @@
 					isBj: false,
 					time: ''
 				}, ],
-				enable: true
+				enable: true,
+				netTotal: 4
 			};
 		},
 		// 在对应的show和hide页面生命周期中打开或关闭监听
@@ -144,6 +146,9 @@
 					return o.value === this.selectEqItem.value
 				});
 				return index >= 0 ? index : 0;
+			},
+			isOpen: function() {
+				return this.netTotal === this.netList.length
 			}
 		},
 		methods: {
@@ -159,6 +164,24 @@
 					position: 'top',
 					type: 'warning'
 				})
+			},
+			goEquipManage() {
+				uni.navigateTo({
+					url: '/views/state/equipManage/equipManage',
+					success(res) {
+					},
+					fail(err) {
+					}
+				});
+			},
+			goNetworkManage() {
+				uni.navigateTo({
+					url: '/views/state/networkManage/networkManage',
+					success(res) {
+					},
+					fail(err) {
+					}
+				});
 			},
 			openVisitor() {
 				this.$refs.uToast.show({

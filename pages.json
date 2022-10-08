@@ -9,7 +9,7 @@
 				"navigationBarTitleText": "登录",
 				"enablePullDownRefresh": false
 			}
-		
+
 		},
 		{
 			"path": "views/register/register",
@@ -228,89 +228,85 @@
 				"navigationBarTitleText": "信号强度历史数据",
 				"navigationStyle": "custom"
 			}
+		}, {
+			"path": "views/losePassword/yanzheng/yanzheng",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/losePassword/codeCheck/codeCheck",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/losePassword/rePassword/rePassword",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/routing/pages/SysStatus/SysStatus",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/routing/pages/SeniorSetWan/SeniorSetWan",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/routing/pages/SeniorSetWanParameter/SeniorSetWanParameter",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/routing/pages/GenralSet/GenralSet",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/routing/pages/GeneralSetBasic/GeneralSetBasic",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/routing/pages/WirdLessSetControl/WirdLessSetControl",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/state/networkManage/networkManage",
+			"style": {
+				"navigationBarTitleText": "上网设置",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "views/state/equipManage/equipManage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	    ,{
-            "path" : "views/losePassword/yanzheng/yanzheng",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/losePassword/codeCheck/codeCheck",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/losePassword/rePassword/rePassword",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/pages/SysStatus/SysStatus",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/pages/SeniorSetWan/SeniorSetWan",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/pages/SeniorSetWanParameter/SeniorSetWanParameter",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/pages/GenralSet/GenralSet",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/pages/GeneralSetBasic/GeneralSetBasic",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "views/routing/pages/WirdLessSetControl/WirdLessSetControl",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#4f67e6",

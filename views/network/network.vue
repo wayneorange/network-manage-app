@@ -48,13 +48,14 @@
 				// uniapp选择元素节点
 				const query = uni.createSelectorQuery().in(this);
 				const screenWidth = screenInfo.windowWidth;
-				const color = '#4875b3';
+				const color = '#3568ff';
 				const ctx = uni.createCanvasContext('canvas');
 				// 
 				const centerScreen = Number(screenWidth / 2);
-				ctx.drawImage('../../static/network/network.png', centerScreen - 40, 40, 80, 80);
+				ctx.drawImage('../../static/network/network.png', centerScreen - 50, 50, 100, 100);
 				ctx.drawImage('../../static/network/luyou.png', centerScreen - 40, 180, 80, 80);
-				ctx.moveTo(centerScreen, 180);
+				
+				ctx.moveTo(centerScreen, 200);
 				ctx.lineTo(centerScreen, 150);
 				ctx.lineWidth = 2.5;
 				ctx.strokeStyle= color;
@@ -65,7 +66,21 @@
 				ctx.setFillStyle(color);
 				ctx.stroke();
 				ctx.fill();
-				ctx.closePath()
+				ctx.closePath();
+				
+				ctx.beginPath()
+				ctx.arc(centerScreen + 30 , 240, 8, 0, 2 * Math.PI)
+				ctx.setFillStyle('red');
+				ctx.fill();
+				ctx.closePath();
+				
+				ctx.beginPath()
+				ctx.setFontSize(15)
+				ctx.setFillStyle('#FFFFFF');
+				ctx.setTextAlign('left')
+				ctx.fillText(this.imgs.length, centerScreen + 26 , 245)
+				ctx.fill();
+				ctx.closePath();
 				
 				const imgs = this.imgs || [];
 				const num = ((screenWidth / 4) - 80) / 2;

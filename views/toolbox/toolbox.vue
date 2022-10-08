@@ -22,37 +22,37 @@
 				list: [
 					{
 						title: '九轴测试图',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/number-axis.png',
 						url: '/pages/router/nineShaft'
 					},
 					{
 						title: '温湿度图',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/sdwd.png',
 						url: '/pages/router/tempetura'
 					},
 					{
 						title: '路由器测试',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/luyou.png',
 						url: '/pages/router/routerDiagram'
 					},
 					{
 						title: '图表历史记录',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/ls.png',
 						url: '/pages/router/routerDiagram'
 					},
 					{
 						title: '实时环境检测历史记录',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/hjjc.png',
 						url: '/pages/router/humidityHis'
 					},
 					{
 						title: '实时姿态检测历史记录',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/sn106.png',
 						url: '/pages/router/nineShaftHis'
 					},
 					{
 						title: '信号强度历史记录',
-						img: '../../static/network/dell.png',
+						img: '../../static/tooltip/xh.png',
 						url: '/pages/router/signalHis'
 					}
 				]
