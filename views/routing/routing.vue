@@ -10,7 +10,7 @@
 			<view class="list-item" @click="goRoutePage(item)" v-for="(item, i) in routingList" :key="i"
 				:style="{ marginBottom: `${i === 0 || i % 4 === 0 ? '20px': '0'}` }">
 				<view class="left">
-					<img src="../../static/network/dell.png">
+					<img :src="item.img">
 					<text class="name">{{ item.title }}</text>
 				</view>
 				<view class="right">
@@ -26,27 +26,27 @@
 		data() {
 			return {
 				routingList: [{
-					img: '',
+					img: '../../static/routing/state.png',
 					title: '系统状态',
 					path: 'SysStatus'
 				}, {
-					img: '',
+					img: '../../static/routing/WAN.png',
 					title: 'WAN口设置',
 					path: 'SeniorSetWan'
 				}, {
-					img: '',
+					img: '../../static/routing/WAN2.png',
 					title: 'WAN口参数',
 					path: 'SeniorSetWanParameter'
 				}, {
-					img: '',
+					img: '../../static/routing/G5.png',
 					title: '5G模块调配',
 					path: 'GenralSet'
 				}, {
-					img: '',
+					img: '../../static/routing/base.png',
 					title: '基本设置',
 					path: 'GeneralSetBasic'
 				},{
-					img: '',
+					img: '../../static/routing/mac.png',
 					title: '安全mac过滤',
 					path: 'WirdLessSetControl'
 				}]

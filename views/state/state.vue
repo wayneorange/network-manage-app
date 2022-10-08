@@ -38,25 +38,26 @@
 		<view class="state-main">
 			<div class="list-content">
 				<!-- list -->
-				<view class="list-item" v-for="item in 4">
-					<img src="static/state/apple.png" class="img" alt="" srcset="">
+				<view class="list-item" v-for="(item, i) in netList" :key="i">
+					<img :src="item.img" class="img" alt="" srcset="">
 					<view class="content">
-						<text class="name">My Phone</text>
+						<text class="name" :class="item.isBj ? 'isBj':''">{{ item.title }}</text>
 						<view class="line">
 							<view class="up">
 								<u-icon name="arrow-upward" color="#88b3de"></u-icon>
-								<text class="num">2.8KB/S</text>
+								<text class="num">{{ item.up }}</text>
 							</view>
 							<view class="down">
 								<u-icon name="arrow-downward" color="#bfe3d7"></u-icon>
-								<text class="num">12.8MB/S</text>
+								<text class="num">{{ item.down }}</text>
 							</view>
 						</view>
 						<view class="line">
-							<text class="jr">接入2.4G</text>
-							<text style="display: flex;align-items: center;">{{ new Date().Format("yyyy-MM-dd mm:ss") }}</text>
+							<text class="jr">接入{{ item.in }}</text>
+							<text
+								style="display: flex;align-items: center;">{{ item.time || new Date().Format("yyyy-MM-dd mm:ss") }}</text>
 						</view>
-						
+
 					</view>
 				</view>
 				<!--  -->
@@ -94,15 +95,48 @@
 					value: 'lyq',
 					label: '路由器'
 				},
+				netList: [{
+					title: '音响',
+					img: 'static/state/yinxiang.png',
+					up: '2.8KB/S',
+					down: '12.8MB/S',
+					in: '2.4G',
+					isBj: true,
+					time: ''
+				}, {
+					title: 'DVD',
+					img: 'static/state/DVD.png',
+					up: '2.8KB/S',
+					down: '12.8MB/S',
+					in: '2.4G',
+					isBj: false,
+					time: ''
+				}, {
+					title: '未知设备',
+					img: 'static/state/equip.png',
+					up: '2.8KB/S',
+					down: '12.8MB/S',
+					in: '2.4G',
+					isBj: false,
+					time: ''
+				}, {
+					title: '未知设备-0',
+					img: 'static/state/equip.png',
+					up: '2.8KB/S',
+					down: '12.8MB/S',
+					in: '2.4G',
+					isBj: false,
+					time: ''
+				}, ],
 				enable: true
 			};
 		},
 		// 在对应的show和hide页面生命周期中打开或关闭监听
 		onShow() {
-			this.enable= true
+			this.enable = true
 		},
 		onHide() {
-			this.enable= false
+			this.enable = false
 		},
 		computed: {
 			selectEqIndex() {
@@ -216,32 +250,37 @@
 				margin-left: 10px;
 			}
 		}
-		
+
 		.state-main {
 			width: 100%;
-			
+
 			.list-content {
-				
+
 				.list-item {
 					display: flex;
 					align-items: center;
 					height: 100px;
 					padding: 20px;
 					background-color: #fff;
-					border-bottom:1px solid #f2f2f2;
-					
+					border-bottom: 1px solid #f2f2f2;
+
 					.img {
 						height: 80px;
 						width: 80px;
 						margin-right: 20px;
 					}
-					
+
 					.content {
-						
+
 						.name {
 							font-size: 1.25em;
 							font-weight: 500;
-							
+						}
+
+						.name.isBj {
+							font-size: 1.25em;
+							font-weight: 500;
+
 							&::after {
 								content: '本机';
 								margin-left: 10px;
@@ -255,27 +294,29 @@
 								padding: 2px 5px;
 							}
 						}
-						
+
 						.line {
 							display: flex;
 							white-space: nowrap;
 							margin-top: 5px;
 							color: #838383;
-							
-							.up, .down, .jr {
+
+							.up,
+							.down,
+							.jr {
 								margin-right: 20px;
-								
+
 								.u-icon {
 									margin-right: 5px;
 								}
 							}
-							
+
 						}
 					}
 				}
-				
+
 			}
-			
+
 			.more-list {
 				width: 100%;
 				box-sizing: border-box;
@@ -285,8 +326,9 @@
 				justify-content: space-between;
 				height: 3em;
 				padding: 0 20px;
-			}			
+			}
 		}
+
 		.visitor-config {
 			width: 100%;
 			padding: 20px;
@@ -295,7 +337,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			
+
 			.to-open {
 				display: inline-flex;
 				align-items: center;
@@ -306,7 +348,7 @@
 				width: 100px;
 				color: #6995c7;
 				font-weight: 500;
-				
+
 			}
 		}
 	}

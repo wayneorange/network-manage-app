@@ -20,24 +20,20 @@
 				],
 				imgs: [
 					{
-						text: 'My Phone',
-						img: '../../static/network/apple.png'
+						text: '音响',
+						img: '../../static/network/yinxiang.png'
 					},
 					{
-						text: 'Dell',
-						img: '../../static/network/dell.png'
+						text: 'DVD',
+						img: '../../static/network/DVD.png'
 					},
 					{
-						text: 'Dell',
-						img: '../../static/network/dell.png'
+						text: '未知设备',
+						img: '../../static/network/equip.png'
 					},
 					{
-						text: 'Dell',
-						img: '../../static/network/dell.png'
-					},
-					{
-						text: 'Dell',
-						img: '../../static/network/dell.png'
+						text: '未知设备-1',
+						img: '../../static/network/equip.png'
 					}
 				]
 			};
@@ -141,8 +137,12 @@
 		text {
 			height: 110px;
 			display: flex;
+			width: 100%;
 			align-items: flex-end;
 			justify-content: center;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}
 	}
 	
