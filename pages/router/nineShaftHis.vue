@@ -1,18 +1,8 @@
 <template>
 	<view>
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block></cu-custom>
-		<u-notice-bar mode="horizontal" type="primary" :list="list"></u-notice-bar>
-
-		<!-- 时间选择器 -->
-		<view class="example-body"><uni-datetime-picker type="date" :clear-icon="false" v-model="single" /></view>
-
-		<view class="style">
-			<picker @change="bindPickerChange" :value="index" :range="array">
-				<view class="uni-input">{{ array[index] }}</view>
-			</picker>
-		</view>
-		<view class="style"><button @click="changeOption">查询</button></view>
-		<view @click="echarts.onClick" :prop="option" :change:prop="echarts.updateEcharts" id="echarts" class="echarts"></view>
+		<u-notice-bar mode="horizontal" type="primary" :list="list"></u-notice-bar>				<view class="bg-custom-container">			<!-- 时间选择器 -->			<view class="example-body">				<view class="date-box">					<uni-datetime-picker type="date" :clear-icon="false" v-model="single" />				</view>				<view class="picker-box">					<picker @change="bindPickerChange" :value="index" :range="array">						<view class="uni-input">请选择：{{ array[index] }}</view>					</picker>				</view>							</view>						<view class="btns">				<u-button @click="changeOption">查询</u-button>			</view>					<view class="charts-item">				<view @click="echarts.onClick" :prop="option" :change:prop="echarts.updateEcharts" id="echarts"					class="echarts"></view>					<view @click="echarts.onClick" :prop="option" :change:prop="echarts.updateEcharts" id="echarts" class="echarts"></view>			</view>		</view>
+		
 	</view>
 </template>
 
@@ -269,35 +259,51 @@ export default {
 }
 </script>
 
-<style>
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
+<style lang="less">
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 
-.echarts {
-	margin-top: 100px;
-	width: 100%;
-	height: 300px;
-}
+	.echarts {
+		// margin-top: 100px;
+		width: 100%;
+		height: 300px;
+	}
 
-.example-body {
-	/* background-color: #fff; */
-	padding: 10px;
-	width: 40%;
-	height: 50px;
-	margin-top: 10px;
-	display: inline-block;
-}
+	.example-body {
+		/* background-color: #fff; */		display: flex;
+		padding: 10px 0;		width: 100%;		margin-bottom: 20px;				.date-box {			width: 150px;			margin-right: 20px;		}				.picker-box {			height: 35px;			display: flex;			align-items: center;		}				.u-btn {			width: 100px;			height: 35px;		}				
+	}
 
-.style {
-	/* background-color: #fff; */
-	padding: 10px;
-	width: 30%;
-	height: 30px;
-	margin-top: 10px;
-	display: inline-block;
-}
+	.style {
+		width: 30%;
+		margin: 10px 0;
+	}
+
+	.bg-custom-container {
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+		background-color: #f1f5f9;
+
+		.charts-item {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #FFFFFF;
+			background-color: #fff;
+			border-radius: 5px;
+			margin-bottom: 20px;
+
+		}
+
+		.btns {
+			margin-bottom: 20px;
+			display: flex;
+			width: 100%;
+			align-items: center;						.u-btn {				margin-left: 0;				height: 35px;			}
+		}
+	}
 </style>

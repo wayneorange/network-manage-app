@@ -4,7 +4,7 @@
 		<text style="" class="luyou">路由器</text>
 		<view class="text-contetnt">
 			<text :style="{height: `${110 + ((Math.ceil((i + 1) / 4) - 1)) * 5}px`}" v-for="(item, i) in imgs" :key="i + item.text">{{ item.text }}</text>
-		</view>
+		</view>		<view class="load" @click="onloadIng"></view>
 	</view>
 </template>
 
@@ -54,6 +54,7 @@
 				const centerScreen = Number(screenWidth / 2);
 				ctx.drawImage('../../static/network/network.png', centerScreen - 50, 50, 100, 100);
 				ctx.drawImage('../../static/network/luyou.png', centerScreen - 40, 180, 80, 80);
+				ctx.drawImage('../../static/network/load.png', 20, 20, 30, 30);
 				
 				ctx.moveTo(centerScreen, 200);
 				ctx.lineTo(centerScreen, 150);
@@ -121,8 +122,7 @@
 				ctx.fill();
 				
 				ctx.draw()
-			
-			}
+			},			onloadIng() {				this.drawCanvas();			}
 		}
 	}
 </script>
@@ -160,7 +160,7 @@
 			text-overflow: ellipsis;
 		}
 	}
-	
+		.load {		height: 30px;		width: 30px;		position: absolute;		top: 20px;		left: 20px;	}	
 	text {
 		font-size: 1.25em;
 		font-weight: 500;
