@@ -1,2 +1,2 @@
 # network-manage-app 
-路由管理 uniapp 小程序 
+路由器管理 uniapp 小程序 
