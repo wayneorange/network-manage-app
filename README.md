@@ -1,2 +1,2 @@
 # network-manage-app 
-路由器管理 uniapp 小程序 
+基于 uniapp 的路由器管理多端应用
